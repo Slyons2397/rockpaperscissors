@@ -99,6 +99,10 @@ body {
 #newRound {
     margin-top: 2rem;
     margin-bottom: 1rem;
+    border: solid 4px black;
+    padding: .25rem .25rem;
+    font-size: 1rem;
+
 }
 
 
@@ -106,7 +110,7 @@ body {
     cursor: pointer;
     padding: .25rem .25rem;
     transition: .4s;
-    font-size:3rem;
+    font-size:1rem;
 }
 
 @media screen and (max-width: 780px) {
