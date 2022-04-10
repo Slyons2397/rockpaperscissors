@@ -76,11 +76,12 @@ scissorsButton.addEventListener('click', (e)=>{
             computersChoice = 'SCISSORS';
         }
     }
-
-    yourChoice.textContent = "You chose:" + " " + playerChoice;
-    theirChoice.textContent = "The computer chose:" + " " + computersChoice;
         computerChoice();
     
+        yourChoice.textContent = "You chose:" + " " + playerChoice;
+        theirChoice.textContent = "The computer chose:" + " " + computersChoice;
+        console.log(playerChoice);
+        console.log(computersChoice);
         whoWins();
 })
 
