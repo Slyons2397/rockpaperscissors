@@ -19,6 +19,9 @@ newRound.addEventListener('click', (e)=>{
     finalMessage.textContent = '';
     yourChoice.textContent = '';
     theirChoice.textContent = '';
+    rockButton.textContent = '✊';
+    paperButton.textContent = '📄';
+    scissorsButton.textContent = '✂️';
 })
 rockButton.addEventListener('click', (e)=>{
    playerChoice = 'rock'.toUpperCase();
@@ -120,18 +123,24 @@ function whoWins(){
     if (finalPlayerScore == '5'){
         finalMessage.textContent = "YOU BEAT THE COMPUTER!";
         winMessage.textContent = 'NICE!';
-        newRound.textContent = 'New Round?';
+        newRound.textContent = 'New Game?';
         yourChoice.textContent = '';
         theirChoice.textContent = '';
+        rockButton.textContent = '';
+        paperButton.textContent = '';
+        scissorsButton.textContent = '';
 
     }
     
     if (finalComputerScore == '5'){
         finalMessage.textContent = "YOU LOST TO THE COMPUTER!";
         winMessage.textContent = 'WHAT HAVE YOU DONE?!';
-        newRound.textContent = 'New Round?';
+        newRound.textContent = 'New Game?';
         yourChoice.textContent = '';
         theirChoice.textContent = '';
+        rockButton.textContent = '';
+        paperButton.textContent = '';
+        scissorsButton.textContent = '';
 
     }
 }
